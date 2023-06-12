@@ -40,7 +40,6 @@ data = data[(z_scores < 3).all(axis=1)]  # Set the z-score threshold as needed
 
 # Stemming and stop word deletion
 nltk.download('wordnet')
-
 stemmer = PorterStemmer()
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english'))
